@@ -1,214 +1,927 @@
-<!DOCTYPE HTML>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Forty by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evans Okpenkedime — Digital Marketer & Brand Builder</title>
+  <meta name="description" content="HubSpot Certified Digital Marketer | SEO & Social Media | Brand Builder | Founder @Pazruz. Based in Lagos, Nigeria." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    :root {
+      --black: #0e0e0e;
+      --white: #f7f5f0;
+      --cream: #ede9e0;
+      --sand: #c8be9f;
+      --accent: #b5732a;
+      --accent-light: #e8d5b7;
+      --text-muted: #6b6560;
+      --serif: 'DM Serif Display', Georgia, serif;
+      --sans: 'DM Sans', system-ui, sans-serif;
+    }
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<a href="index.html" class="logo"><strong>Forty</strong> <span>by HTML5 UP</span></a>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+    html { scroll-behavior: smooth; }
 
-				<!-- Menu -->
-					<nav id="menu">
-						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="landing.html">Landing</a></li>
-							<li><a href="generic.html">Generic</a></li>
-							<li><a href="elements.html">Elements</a></li>
-						</ul>
-						<ul class="actions stacked">
-							<li><a href="#" class="button primary fit">Get Started</a></li>
-							<li><a href="#" class="button fit">Log In</a></li>
-						</ul>
-					</nav>
+    body {
+      font-family: var(--sans);
+      background: var(--black);
+      color: var(--white);
+      overflow-x: hidden;
+    }
 
-				<!-- Banner -->
-					<section id="banner" class="major">
-						<div class="inner">
-							<header class="major">
-								<h1>Hi, my name is Evans Okpenkedime</h1>
-							</header>
-							<div class="content">
-								<p>Creator Marketing • Digital Marketing • Brand Growth<br />
-								<ul class="actions">
-									<li><a href="#one" class="button next scrolly">Get Started</a></li>
-								</ul>
-							</div>
-						</div>
-					</section>
+    /* ─── NAV ─── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.25rem 4rem;
+      background: rgba(14,14,14,0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(200,190,159,0.12);
+    }
 
-				<!-- Main -->
-					<div id="main">
+    .nav-logo {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      color: var(--white);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    }
 
-						<!-- One -->
-							<section id="one" class="tiles">
-								<article>
-									<span class="image">
-										<img src="images/pic01.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Aliquam</a></h3>
-										<p>Ipsum dolor sit amet</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic02.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Tempus</a></h3>
-										<p>feugiat amet tempus</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic03.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Magna</a></h3>
-										<p>Lorem etiam nullam</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic04.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Ipsum</a></h3>
-										<p>Nisl sed aliquam</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic05.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Consequat</a></h3>
-										<p>Ipsum dolor sit amet</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic06.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Etiam</a></h3>
-										<p>Feugiat amet tempus</p>
-									</header>
-								</article>
-							</section>
+    .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+    }
 
-						<!-- Two -->
-							<section id="two">
-								<div class="inner">
-									<header class="major">
-										<h2>Massa libero</h2>
-									</header>
-									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
-									<ul class="actions">
-										<li><a href="landing.html" class="button next">Get Started</a></li>
-									</ul>
-								</div>
-							</section>
+    .nav-links a {
+      font-size: 0.82rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--sand);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
 
-					</div>
+    .nav-links a:hover { color: var(--white); }
 
-				<!-- Contact -->
-					<section id="contact">
-						<div class="inner">
-							<section>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Clear" /></li>
-									</ul>
-								</form>
-							</section>
-							<section class="split">
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-envelope"></span>
-										<h3>Email</h3>
-										<a href="#">information@untitled.tld</a>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-phone"></span>
-										<h3>Phone</h3>
-										<span>(000) 000-0000 x12387</span>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-home"></span>
-										<h3>Address</h3>
-										<span>1234 Somewhere Road #5432<br />
-										Nashville, TN 00000<br />
-										United States of America</span>
-									</div>
-								</section>
-							</section>
-						</div>
-					</section>
+    .nav-cta {
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--black) !important;
+      background: var(--accent);
+      padding: 0.55rem 1.25rem;
+      border-radius: 2px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
 
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer>
+    .nav-cta:hover { background: #c4842f !important; color: var(--black) !important; }
 
-			</div>
+    /* ─── HERO ─── */
+    #hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      padding: 8rem 4rem 6rem;
+      position: relative;
+      overflow: hidden;
+    }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    #hero::before {
+      content: '';
+      position: absolute;
+      top: -200px; right: -200px;
+      width: 700px; height: 700px;
+      background: radial-gradient(circle, rgba(181,115,42,0.12) 0%, transparent 65%);
+      pointer-events: none;
+    }
 
-	</body>
+    .hero-text { max-width: 580px; }
+
+    .hero-eyebrow {
+      font-size: 0.75rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .hero-eyebrow::before {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 1px;
+      background: var(--accent);
+    }
+
+    h1 {
+      font-family: var(--serif);
+      font-size: clamp(3rem, 5.5vw, 4.8rem);
+      line-height: 1.07;
+      letter-spacing: -0.01em;
+      color: var(--white);
+      margin-bottom: 1.75rem;
+    }
+
+    h1 em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .hero-sub {
+      font-size: 1.05rem;
+      font-weight: 300;
+      line-height: 1.75;
+      color: rgba(247,245,240,0.65);
+      max-width: 440px;
+      margin-bottom: 2.75rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1.25rem;
+      align-items: center;
+    }
+
+    .btn-primary {
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: var(--accent);
+      color: var(--black);
+      padding: 0.85rem 2rem;
+      border-radius: 2px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .btn-primary:hover { background: #c4842f; transform: translateY(-1px); }
+
+    .btn-ghost {
+      font-size: 0.82rem;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--sand);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: color 0.2s;
+    }
+
+    .btn-ghost::after { content: '↗'; font-size: 1rem; }
+    .btn-ghost:hover { color: var(--white); }
+
+    /* Credential badges */
+    .hero-creds {
+      grid-column: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 1rem;
+      padding-top: 4rem;
+    }
+
+    .cred-badge {
+      background: rgba(200,190,159,0.06);
+      border: 1px solid rgba(200,190,159,0.15);
+      border-radius: 4px;
+      padding: 1rem 1.5rem;
+      text-align: right;
+      max-width: 280px;
+      transition: border-color 0.2s;
+    }
+
+    .cred-badge:hover { border-color: rgba(181,115,42,0.4); }
+
+    .cred-badge strong {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--white);
+      margin-bottom: 0.25rem;
+    }
+
+    .cred-badge span {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      letter-spacing: 0.04em;
+    }
+
+    /* ─── SECTION BASE ─── */
+    section {
+      padding: 6rem 4rem;
+    }
+
+    .section-label {
+      font-size: 0.72rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .section-label::before {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 1px;
+      background: var(--accent);
+    }
+
+    h2 {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      line-height: 1.15;
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+
+    .section-intro {
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.8;
+      color: rgba(247,245,240,0.55);
+      max-width: 560px;
+    }
+
+    hr.divider {
+      border: none;
+      border-top: 1px solid rgba(200,190,159,0.1);
+      margin: 0 4rem;
+    }
+
+    /* ─── ABOUT ─── */
+    #about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      align-items: start;
+    }
+
+    .about-body {
+      padding-top: 0.5rem;
+    }
+
+    .about-body p {
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.85;
+      color: rgba(247,245,240,0.7);
+      margin-bottom: 1.25rem;
+    }
+
+    .about-body p strong {
+      color: var(--white);
+      font-weight: 500;
+    }
+
+    .about-skills {
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    .skill-tag {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.4rem 0.85rem;
+      border: 1px solid rgba(181,115,42,0.35);
+      border-radius: 2px;
+      color: var(--accent-light);
+    }
+
+    /* ─── SERVICES / WHAT I DO ─── */
+    #services {
+      background: rgba(200,190,159,0.03);
+      border-top: 1px solid rgba(200,190,159,0.08);
+      border-bottom: 1px solid rgba(200,190,159,0.08);
+    }
+
+    .services-header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      margin-bottom: 4rem;
+      align-items: end;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5px;
+      background: rgba(200,190,159,0.1);
+    }
+
+    .service-card {
+      background: var(--black);
+      padding: 2.5rem 2rem;
+      transition: background 0.25s;
+    }
+
+    .service-card:hover { background: rgba(200,190,159,0.04); }
+
+    .service-icon {
+      font-size: 1.5rem;
+      margin-bottom: 1.25rem;
+      color: var(--accent);
+    }
+
+    .service-card h3 {
+      font-family: var(--serif);
+      font-size: 1.3rem;
+      color: var(--white);
+      margin-bottom: 0.75rem;
+    }
+
+    .service-card p {
+      font-size: 0.9rem;
+      font-weight: 300;
+      line-height: 1.75;
+      color: rgba(247,245,240,0.5);
+    }
+
+    /* ─── CASE STUDY / WORK ─── */
+    #work { }
+
+    .work-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 3.5rem;
+    }
+
+    .work-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5px;
+      background: rgba(200,190,159,0.1);
+    }
+
+    .work-card {
+      background: var(--black);
+      padding: 3rem 2.5rem;
+      position: relative;
+      transition: background 0.25s;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .work-card:hover { background: rgba(200,190,159,0.04); }
+
+    .work-card:hover .work-arrow { transform: translate(4px, -4px); }
+
+    .work-tag {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid rgba(181,115,42,0.3);
+      padding: 0.3rem 0.65rem;
+      border-radius: 2px;
+      margin-bottom: 1.5rem;
+    }
+
+    .work-card h3 {
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      color: var(--white);
+      margin-bottom: 0.85rem;
+      line-height: 1.2;
+    }
+
+    .work-card p {
+      font-size: 0.9rem;
+      font-weight: 300;
+      line-height: 1.75;
+      color: rgba(247,245,240,0.5);
+      margin-bottom: 1.75rem;
+    }
+
+    .work-arrow {
+      font-size: 1.25rem;
+      color: var(--accent);
+      transition: transform 0.2s;
+      display: inline-block;
+    }
+
+    .work-card-featured {
+      grid-column: span 2;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+    }
+
+    .work-card-featured .work-card-text {
+      padding: 3.5rem 3rem;
+    }
+
+    .work-card-featured .work-card-visual {
+      background: rgba(181,115,42,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 280px;
+    }
+
+    .pazruz-logo-display {
+      font-family: var(--serif);
+      font-size: 3.5rem;
+      color: rgba(181,115,42,0.4);
+      letter-spacing: 0.1em;
+    }
+
+    /* ─── CERTIFICATIONS ─── */
+    #certifications {
+      background: rgba(181,115,42,0.05);
+      border-top: 1px solid rgba(181,115,42,0.12);
+    }
+
+    .cert-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: rgba(200,190,159,0.1);
+      margin-top: 3rem;
+    }
+
+    .cert-item {
+      background: var(--black);
+      padding: 2rem 1.75rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .cert-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      margin-top: 0.35rem;
+      flex-shrink: 0;
+    }
+
+    .cert-item strong {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--white);
+      margin-bottom: 0.25rem;
+    }
+
+    .cert-item span {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* ─── CONTACT ─── */
+    #contact {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      align-items: start;
+    }
+
+    .contact-details {
+      margin-top: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .contact-line {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      text-decoration: none;
+      color: rgba(247,245,240,0.7);
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+
+    .contact-line:hover { color: var(--white); }
+
+    .contact-line-icon {
+      width: 36px;
+      height: 36px;
+      border: 1px solid rgba(200,190,159,0.2);
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .contact-form-side {
+      padding-top: 0.5rem;
+    }
+
+    .contact-form-side p {
+      font-size: 0.9rem;
+      font-weight: 300;
+      line-height: 1.8;
+      color: rgba(247,245,240,0.55);
+      margin-bottom: 2rem;
+    }
+
+    .cta-block {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .social-row {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .social-link {
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--sand);
+      text-decoration: none;
+      border: 1px solid rgba(200,190,159,0.2);
+      padding: 0.55rem 1rem;
+      border-radius: 2px;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .social-link:hover { border-color: var(--accent); color: var(--white); }
+
+    /* ─── FOOTER ─── */
+    footer {
+      padding: 2rem 4rem;
+      border-top: 1px solid rgba(200,190,159,0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    footer p {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    /* ─── SCROLL REVEAL ─── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 900px) {
+      nav { padding: 1rem 1.75rem; }
+      .nav-links { display: none; }
+
+      #hero { grid-template-columns: 1fr; padding: 7rem 1.75rem 4rem; }
+      .hero-creds { grid-column: 1; align-items: flex-start; flex-direction: row; flex-wrap: wrap; padding-top: 3rem; }
+      .cred-badge { text-align: left; max-width: 200px; }
+
+      section { padding: 4rem 1.75rem; }
+      hr.divider { margin: 0 1.75rem; }
+
+      #about { grid-template-columns: 1fr; gap: 2rem; }
+      .services-header { grid-template-columns: 1fr; gap: 1rem; }
+      .services-grid { grid-template-columns: 1fr; }
+      .work-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+      .work-grid { grid-template-columns: 1fr; }
+      .work-card-featured { grid-column: span 1; grid-template-columns: 1fr; }
+      .work-card-featured .work-card-visual { min-height: 160px; }
+      .cert-list { grid-template-columns: 1fr; }
+      #contact { grid-template-columns: 1fr; gap: 3rem; }
+      footer { flex-direction: column; gap: 0.5rem; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#hero" class="nav-logo">Evans Okpenkedime</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#certifications">Credentials</a></li>
+      <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-text">
+      <p class="hero-eyebrow">Lagos, Nigeria — Open to Remote</p>
+      <h1>Digital Marketer.<br /><em>Brand Builder.</em><br />Founder.</h1>
+      <p class="hero-sub">
+        I build brands that earn attention — through strategic content, SEO-driven growth,
+        and community that converts. Certified. Self-built. Results-focused.
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="btn-primary">See My Work</a>
+        <a href="#contact" class="btn-ghost">Work With Me</a>
+      </div>
+    </div>
+    <div class="hero-creds">
+      <div class="cred-badge">
+        <strong>HubSpot Certified</strong>
+        <span>Digital Marketing</span>
+      </div>
+      <div class="cred-badge">
+        <strong>SEO Marketing</strong>
+        <span>Certified Practitioner</span>
+      </div>
+      <div class="cred-badge">
+        <strong>Social Media Marketing</strong>
+        <span>Certified Practitioner</span>
+      </div>
+      <div class="cred-badge">
+        <strong>Founder — Pazruz</strong>
+        <span>Minimalist Menswear, Lagos</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div>
+      <p class="section-label">About</p>
+      <h2>The marketer<br />behind the work</h2>
+    </div>
+    <div class="about-body reveal">
+      <p>
+        I'm Evans Okpenkedime — a <strong>digital marketer and brand builder</strong> based in Lagos,
+        Nigeria. My experience was forged in the real world: building brands, managing communities,
+        and driving growth from scratch rather than in an agency seat.
+      </p>
+      <p>
+        I founded <strong>Pazruz</strong>, a minimalist menswear brand targeting Lagos creatives and
+        tech professionals — and in doing so, developed sharp instincts for content strategy,
+        audience psychology, and brand positioning that actually works in the Nigerian market.
+      </p>
+      <p>
+        I'm currently available for <strong>remote marketing roles</strong> and <strong>freelance engagements</strong>
+        with international companies and agencies open to working with Nigeria-based talent.
+      </p>
+      <div class="about-skills">
+        <span class="skill-tag">Content Strategy</span>
+        <span class="skill-tag">SEO</span>
+        <span class="skill-tag">Social Media</span>
+        <span class="skill-tag">Community Management</span>
+        <span class="skill-tag">Brand Positioning</span>
+        <span class="skill-tag">HubSpot</span>
+        <span class="skill-tag">Email Marketing</span>
+        <span class="skill-tag">Discord Growth</span>
+        <span class="skill-tag">Canva</span>
+        <span class="skill-tag">CapCut</span>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="services-header">
+      <div>
+        <p class="section-label">What I Do</p>
+        <h2>Marketing that<br />moves the needle</h2>
+      </div>
+      <p class="section-intro">
+        From building a community of 6,000 from 500, to positioning a brand from zero —
+        I work where strategy meets execution.
+      </p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon">◈</div>
+        <h3>Content Strategy</h3>
+        <p>Platform-native content plans built around your audience's psychology. Instagram, TikTok, LinkedIn, X — each with its own voice and purpose.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">◎</div>
+        <h3>SEO & Organic Growth</h3>
+        <p>Keyword research, on-page optimization, and content architecture that builds search presence over time — not just traffic spikes.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">◉</div>
+        <h3>Community Management</h3>
+        <p>Building engaged communities on Discord and social platforms. Proven growth: 500 to 6,000 members for PixelVault with active retention strategies.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">◇</div>
+        <h3>Brand Building</h3>
+        <p>Voice, visual identity direction, and positioning — especially for founders and early-stage brands who need to stand out in a crowded market.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">◆</div>
+        <h3>Email Marketing</h3>
+        <p>Broadcast sequences, nurture flows, and audience segmentation using HubSpot and WhatsApp. Built for conversion, not just opens.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon">◐</div>
+        <h3>Freelance / Remote Ready</h3>
+        <p>Available for project-based engagements or part-time roles with international teams. Timezone-flexible, async-capable, deadline-driven.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- WORK -->
+  <section id="work">
+    <div class="work-header">
+      <div>
+        <p class="section-label">Selected Work</p>
+        <h2>Case studies &<br />real results</h2>
+      </div>
+      <a href="https://notion.so" target="_blank" rel="noopener" class="btn-ghost">Full Portfolio</a>
+    </div>
+
+    <div class="work-grid">
+      <!-- Featured: Pazruz -->
+      <div class="work-card-featured reveal">
+        <div class="work-card-text">
+          <span class="work-tag">Brand Building · Content · Founder Story</span>
+          <h3>Pazruz — Minimalist Menswear Brand</h3>
+          <p>
+            Built the Pazruz brand from the ground up: identity, positioning, go-to-market strategy,
+            and a multi-platform content ecosystem. Developed a Mon/Wed/Fri publishing cadence across
+            Instagram, TikTok, Twitter/X, and Snapchat. Honest diagnosis: Collection 001 launched
+            with no sales — the case study is about what that taught me and what comes next.
+          </p>
+          <span class="work-arrow">↗</span>
+        </div>
+        <div class="work-card-visual">
+          <span class="pazruz-logo-display">PAZRUZ</span>
+        </div>
+      </div>
+
+      <!-- PixelVault -->
+      <div class="work-card reveal">
+        <span class="work-tag">Community · Discord · Growth</span>
+        <h3>PixelVault — Discord Growth</h3>
+        <p>
+          Scaled a Discord server from 500 to 6,000 members through onboarding flows,
+          moderation systems, and content-driven engagement strategy.
+        </p>
+        <div class="work-arrow">↗</div>
+      </div>
+
+      <!-- Personal Styling Service -->
+      <div class="work-card reveal">
+        <span class="work-tag">Launch · Content · WhatsApp</span>
+        <h3>Personal Styling Service Launch</h3>
+        <p>
+          Built a full content ecosystem for a Lagos-based styling service: two blog posts,
+          WhatsApp broadcast sequences, a 30-day content calendar, and Substack publishing strategy.
+        </p>
+        <div class="work-arrow">↗</div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+    <p class="section-label">Credentials</p>
+    <h2>Certified & self-built</h2>
+    <div class="cert-list reveal">
+      <div class="cert-item">
+        <div class="cert-dot"></div>
+        <div>
+          <strong>HubSpot Digital Marketing Certification</strong>
+          <span>HubSpot Academy</span>
+        </div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-dot"></div>
+        <div>
+          <strong>SEO Marketing Certification</strong>
+          <span>HubSpot Academy</span>
+        </div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-dot"></div>
+        <div>
+          <strong>Social Media Marketing Certification</strong>
+          <span>HubSpot Academy</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div>
+      <p class="section-label">Contact</p>
+      <h2>Let's build<br />something.</h2>
+      <p class="section-intro" style="margin-top: 1rem;">
+        Open to remote marketing roles, freelance projects, and consulting with international
+        companies and agencies. Based in Lagos — available to start immediately.
+      </p>
+      <div class="contact-details">
+        <a class="contact-line" href="mailto:evansokpenkedime@gmail.com">
+          <div class="contact-line-icon">✉</div>
+          evansokpenkedime@gmail.com
+        </a>
+        <a class="contact-line" href="https://linkedin.com/in/evans-okpenkedime" target="_blank" rel="noopener">
+          <div class="contact-line-icon">in</div>
+          linkedin.com/in/evans-okpenkedime
+        </a>
+        <a class="contact-line" href="https://twitter.com/pazruz" target="_blank" rel="noopener">
+          <div class="contact-line-icon">𝕏</div>
+          @pazruz
+        </a>
+      </div>
+    </div>
+    <div class="contact-form-side reveal">
+      <p>
+        I respond within 24 hours. Whether you're looking for a marketer to embed in your
+        team remotely, a brand consultant, or a community manager — reach out directly.
+      </p>
+      <div class="cta-block">
+        <a href="mailto:evansokpenkedime@gmail.com?subject=Let's%20Work%20Together" class="btn-primary" style="display: inline-block; text-align: center;">
+          Send Me an Email ↗
+        </a>
+        <div class="social-row" style="margin-top: 0.5rem;">
+          <a href="https://linkedin.com/in/evans-okpenkedime" target="_blank" rel="noopener" class="social-link">LinkedIn</a>
+          <a href="https://twitter.com/pazruz" target="_blank" rel="noopener" class="social-link">Twitter / X</a>
+          <a href="https://instagram.com/pazruz" target="_blank" rel="noopener" class="social-link">Instagram</a>
+          <a href="https://github.com/evans-okpenkedime" target="_blank" rel="noopener" class="social-link">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Evans Okpenkedime. All rights reserved.</p>
+    <p>Lagos, Nigeria · <a href="mailto:evansokpenkedime@gmail.com">evansokpenkedime@gmail.com</a></p>
+  </footer>
+
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => io.observe(el));
+  </script>
+
+</body>
 </html>
